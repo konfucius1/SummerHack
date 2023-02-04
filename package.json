@@ -1,0 +1,24 @@
+{
+  "name": "summerhack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "proxy": "http://localhost:3001",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konfucius1/SummerHack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konfucius1/SummerHack/issues"
+  },
+  "homepage": "https://github.com/konfucius1/SummerHack#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
