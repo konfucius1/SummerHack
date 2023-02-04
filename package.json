@@ -20,5 +20,8 @@
   "homepage": "https://github.com/konfucius1/SummerHack#readme",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
   }
 }
