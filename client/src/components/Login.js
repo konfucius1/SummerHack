@@ -14,14 +14,16 @@ export default function Login() {
       <div class="bg-[#030718] bg-opacity-50 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center justify-center">
         {/* login elements */}
         <div class="px-8 md:px-16 text-center">
-          <p class="font-thin pt-4 text-base">Find your beat, stay on track</p>
-          <h1 class="font-extrabold pt-4 pb-4 text-4xl">
+          <p class="font-montserrat font-thin pt-4 text-base">
+            Find your beat, stay on track
+          </p>
+          <h1 class="font-montserrat font-extrabold pt-4 pb-4 text-4xl">
             Connect your Spotify account
           </h1>
-          <button class="btn text-white aspect-auto w-[160px] h-[60px] bg-pink-500 text-xl">
+          <button class="font-montserrat btn text-white aspect-auto w-[160px] h-[60px] bg-pink-500 text-xl">
             Connect
           </button>
-          <p class="font-thin pt-4">or</p>
+          <p class="font-montserrat font-thin pt-4">or</p>
           <a href="https://google.com">
             <p class="font-light pt-4 pb-4">Continue as guest</p>
           </a>
