@@ -21,6 +21,8 @@ cd SummerHack-Fitbeats
 
 #### Launch Application
 
+To launch frontend cd into client
+
 ```
 npm start
 ```
