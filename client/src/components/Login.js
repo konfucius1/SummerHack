@@ -1,9 +1,10 @@
 import React from 'react';
 import '../index.css';
 import logo from '../images/logo.png';
+import { Container } from 'react-bootstrap';
 
 const AUTH_URL =
-  'https://accounts.spotify.com/authorize?client_id=&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state';
+  'https://accounts.spotify.com/authorize?client_id=f1e7c3672ff745879a343af3876bc441&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state';
 
 export default function Login() {
   return (
@@ -20,9 +21,11 @@ export default function Login() {
           <h1 class="font-montserrat font-extrabold pt-4 pb-4 text-4xl">
             Connect your Spotify account
           </h1>
-          <button class="font-montserrat btn text-white aspect-auto w-[160px] h-[60px] bg-pink-500 text-xl">
-            Connect
-          </button>
+          <a href={AUTH_URL}>
+            <button class="font-montserrat btn text-white aspect-auto w-[160px] h-[60px] bg-pink-500 text-xl">
+              Connect
+            </button>
+          </a>
           <p class="font-montserrat font-thin pt-4">or</p>
           <a href="https://google.com">
             <p class="font-light pt-4 pb-4">Continue as guest</p>
