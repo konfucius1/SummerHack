@@ -17,9 +17,8 @@ export default function useAuth(code) {
         setExpiresIn(res.data.expiresIn);
         window.history.pushState({}, null, '/');
       })
-      .catch((err) => {
+      .catch(() => {
         // window.location = '/';
-        console.log(err);
       });
   }, [code]);
 

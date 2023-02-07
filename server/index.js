@@ -1,15 +1,15 @@
 // server/index.js
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const spotifyWebApi = require('spotify-web-api-node');
 
-const cors = require('cors');
 const app = express();
+app.use(cors());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const PORT = process.env.PORT || 3001;
-
-app.use(cors());
 
 app.get('/api', (req, res) => {
   res.json({ message: 'Hello from server!' });
@@ -36,7 +36,8 @@ app.post('/refresh', (req, res) => {
         expiresIn: data.body.expiresIn,
       });
     })
-    .catch(() => {
+    .catch((err) => {
+      console.log(err);
       res.sendStatus(400);
     });
 });
@@ -59,9 +60,7 @@ app.post('/login', (req, res) => {
       });
     })
     .catch((err) => {
-      // console.log(err);
-      // res.sendStatus(400);
+      console.log(err);
+      res.sendStatus(400);
     });
 });
-
-app.listen(3002);
