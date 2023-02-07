@@ -1,6 +1,6 @@
 #### Dependencies
 
-- Install [Node-LTS](https://nodejs.org/en/download/)
+- Install [Node-18](https://nodejs.org/en/download/)
 
 #### Editor
 
@@ -17,6 +17,8 @@ Install these VS-Code extensions:
 ```
 git clone https://github.com/konfucius1/SummerHack-Fitbeats.git
 cd SummerHack-Fitbeats
+
+npm install axios
 ```
 
 #### Launch Application
@@ -28,3 +30,7 @@ cd client
 npm install
 npm start
 ```
+
+#### References
+https://www.npmjs.com/package/spotify-web-api-node
+https://github.com/thelinmichael/spotify-web-api-node
