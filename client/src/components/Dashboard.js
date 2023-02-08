@@ -7,10 +7,10 @@ export default function Dashboard({ code }) {
   const accessToken = useAuth(code);
   return (
     <div class="bg-gray-900 h-screen">
-      <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+      <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 pt-12">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
           <div class="flex items-center">
-            <img src={logo} class="h-12 mr-3" alt="" />
+            <img src={logo} class="h-16 mr-3" alt="" />
           </div>
 
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
@@ -31,7 +31,7 @@ export default function Dashboard({ code }) {
                 </div>
               </li>
               <li>
-                <button class="font-montserrat btn text-white aspect-auto w-[140px] h-[60px] bg-pink-500 text-l">
+                <button class="font-montserrat btn text-white aspect-auto w-[140px] h-[50px] bg-pink-500 text-l">
                   Log Out
                 </button>
               </li>
@@ -40,7 +40,7 @@ export default function Dashboard({ code }) {
         </div>
       </nav>
 
-      <section class="container p-4 m-4">
+      <section class="container p-4 m-16">
         <h1 class="mb-4 text-xl text-white font-bold">Your playlists</h1>
         <div class="card w-[300px] h-[400px] bg-gray-800 shadow-xl flex flex-col items-center justify-center">
           <svg
