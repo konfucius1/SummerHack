@@ -3,7 +3,7 @@ import '../index.css';
 import logo from '../images/logo.png';
 
 const AUTH_URL =
-  'https://accounts.spotify.com/authorize?client_id=f1e7c3672ff745879a343af3876bc441&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state';
+  'https://accounts.spotify.com/authorize?client_id=f1e7c3672ff745879a343af3876bc441&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state&show_dialog=true';
 
 export default function Login() {
   return (
