@@ -3,6 +3,8 @@ import useAuth from '../useAuth.js';
 import '../index.css';
 import logo from '../images/logo.png';
 
+const LOGOUT_URL = 'https://accounts.spotify.com/en/logout';
+
 export default function Dashboard({ code }) {
   const accessToken = useAuth(code);
   return (
@@ -31,9 +33,11 @@ export default function Dashboard({ code }) {
                 </div>
               </li>
               <li>
-                <button class="font-montserrat btn text-white aspect-auto w-[140px] h-[50px] bg-pink-500 text-l">
-                  Log Out
-                </button>
+                <a href={LOGOUT_URL}>
+                  <button class="font-montserrat btn text-white aspect-auto w-[140px] h-[50px] bg-pink-500 text-l">
+                    Log Out
+                  </button>
+                </a>
               </li>
             </ul>
           </div>
