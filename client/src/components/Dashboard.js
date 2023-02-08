@@ -12,6 +12,7 @@ export default function Dashboard({ code }) {
         <p class="text-white font-thin">Generate</p>
         <p class="text-white font-thin">History</p>
         <p class="text-white font-thin">Settings</p>
+
         <button class="font-montserrat btn text-white aspect-auto w-[140px] h-[60px] bg-pink-500 text-xl">
           Log Out
         </button>
